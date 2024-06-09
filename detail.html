@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <section class="section-2" id="undangan">
+        <nav>
+            <div class="container">
+            <ul>
+                <li class=""><a href="#undangan">BERANDA</a></li>
+                <li class=""><a href="#orang">ORANG</a></li>
+                <li class=""><a href="#waktu">WAKTU & LOKASI</a></li>
+                
+            </ul>
+    
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        </nav>
+        <div class="about" id="orang">
+            <div class="container">
+                <div class="main-text" data-aos="fade-up">
+                    <p>OM SWASTYASTU</p>
+                    <p>Atas Asung Kertha Wara Nugraha Ida Sang Hyang Widhi Wasa/Tuhan Yang Maha Esa kami bermaksud mengundang Bapak/Ibu/Saudara/i pada Upacara Manusa Yadnya Metatah Putra dan Putri kami.</p>
+                </div>
+                <div class="wrapper" data-aos="fade-up">
+                    <div class="left-content "data-aos="fade-up">
+                        <div class="container">
+                            <div class="text">
+                                <p style="color: rgb(206, 141, 0);">Tirta</p>
+                                <p>Ni Putu Tirta Manika Maharani</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dan-content" data-aos="fade-up">
+                        <div class="container">
+                            <div class="img"><img src="assets/dan.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="right-content" data-aos="fade-up">
+                        <div class="container">
+                            <div class="text">
+                                <p style="color: rgb(206, 141, 0);">Dek Widi</p>
+                                <p>I Made Gede Widiana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dan-content" data-aos="fade-up">
+                        <div class="container">
+                            <div class="img"><img src="assets/dan.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="right-content" data-aos="fade-up">
+                        <div class="container">
+                            <div class="text">
+                                <p style="color: rgb(206, 141, 0);">Bintang</p>
+                                <p>I Made Bintang Maha Wirajitha</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="image" data-aos="fade-up">
+        <div class="container">
+            <div class="img"><img src="assets/daun.png" alt=""></div>
+        </div>
+    </div>
+    <div class="">
+        <div class="container">
+            <p></p>
+        </div>
+    </div>
+
+    <section class="section-3" id="waktu">
+        <div class="countdown">
+            <div class="container">
+                <div class="text"><p>Menuju Hari Bahagia</p></div>
+                <div class="wrapper">
+                <div class="card">
+                    <div class="container">
+                        <p id="days"></p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="container">
+                        <p id="hours"></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <p id="minutes"></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <p id="seconds"></p>
+                    </div>
+                </div>
+            </div>
+                
+                
+                
+            </div>
+        </div>
+    </section>
+    
+    <section class="section-4">
+        <div class="lokasi">
+            <div class="container">
+                <div class="text"><div class="container"><p>Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir memberikan doa.</p></div></div>
+                <div class="main-lokasi">
+                    <div class="container">
+                        <div class="text-lokasi"><p>Sabtu, 9 Oktober 2021</p></div>
+                        <div class="text-lokasi"><p>10.00 s/d 20.00 WITA.</p></div>
+                        <div class="text-lokasi"><p>Jl. Raya Gerih nomor 108, abiansemal, Badung, Bali</p></div>
+                        <a href="https://maps.app.goo.gl/qYB9nkkx6DCMcFnt6" data-aos="fade-up"
+                data-aos-duration="1400">Buka Lokasi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+    const menuToggle = document.querySelector('.menu-toggle input');
+    const nav = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('slide');
+    });
+
+
+
+   // Set the date we're counting down to
+var countDownDate = new Date("June 19, 2024 12:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in elements with respective ids
+  document.getElementById("days").innerHTML = days + "<br> Hari" ;
+  document.getElementById("hours").innerHTML = hours + "<br> Jam ";
+  document.getElementById("minutes").innerHTML = minutes + "<br> Menit ";
+  document.getElementById("seconds").innerHTML = seconds + "<br> Detik ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("days").innerHTML = "";
+    document.getElementById("hours").innerHTML = "";
+    document.getElementById("minutes").innerHTML = "";
+    document.getElementById("seconds").innerHTML = "";
+    document.getElementById("expired").style.display = "block";
+  }
+}, 1000);
+    </script>
+</body>
+</html>

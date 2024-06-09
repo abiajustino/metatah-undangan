@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+
+section .home {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+section .home .container {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    justify-content: center;
+    gap: 0.5rem;
+}
+section .home .container .img {
+    width: 25%;
+    padding-top: 1rem;
+}
+
+section .home .container .img img{
+    width: 100%;
+    margin: auto;
+    border-radius: 100%;
+}
+section .home .container .text {
+    font-weight: 800;
+    font-size: 3rem;
+    text-align: center;
+}
+section .home .container .sub-text {
+    font-size: 1rem;
+    text-align: center;
+}
+section .home .container .name-invitation {
+    font-size: 2rem;
+    text-align: center;
+}
+section .home .container .description {
+    font-size: 1rem;
+    text-align: center;
+}
+section .home .container a {
+    width: 12rem;
+    height: 3rem;
+    background: #b48c15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    border: 2px solid;
+    transition: all ease .2s;
+    
+}
+section .home .container a:hover{
+    background: white;
+    color: #b48c15;
+    transition: .2s;
+}
+@media only screen and (max-width: 428px) {
+    section .home .container {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+}
+section .home .container .img {
+    width: 95%;
+    padding-top: 1rem;
+}
+}
