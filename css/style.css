@@ -355,7 +355,7 @@ nav ul li a {
     margin: auto;
 }
 .section-4 .lokasi .container {
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -406,7 +406,13 @@ nav ul li a {
 }
 
 .text .om {
-    font-size: 2rem;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    font-size: 2.5rem;
     text-align: center;
     font-weight: 800;
     color: #b48c15;
@@ -438,6 +444,12 @@ nav ul li a {
     font-size: 2.5rem;
     font-weight: 700;
     color: #2b2b2b;
+ }
+
+ .section-2 .about .container .main-text p:nth-child(2) {
+    width: 90%;
+    margin: auto;
+    font-size: 1rem;
  }
 
 .section-1 .home .container .img{
@@ -528,7 +540,7 @@ nav ul li a {
     margin: auto;
 }
 .section-4 .lokasi .container {
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -547,7 +559,7 @@ nav ul li a {
 
 }
 .section-4 .lokasi .container .main-lokasi .container{
-    width: 100%;
+    width: 80%;
     height: 30vh;
     background-color: white;
     border-radius: 12px;
@@ -579,5 +591,21 @@ nav ul li a {
     background: white;
     color: #b48c15;
     transition: .2s;
+}
+
+
+.text .om {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 800;
+    color: #b48c15;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 }

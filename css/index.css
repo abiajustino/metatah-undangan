@@ -47,18 +47,20 @@ section .home .container .text {
     font-weight: 800;
     font-size: 3rem;
     text-align: center;
+    
 }
 section .home .container .sub-text {
     font-size: 1rem;
     text-align: center;
+    font-weight: 600;
+    opacity: .8;
 }
-section .home .container .name-invitation {
-    font-size: 2rem;
-    text-align: center;
-}
+
 section .home .container .description {
     font-size: 1rem;
     text-align: center;
+    font-weight: 600;
+    opacity: .8;
 }
 section .home .container a {
     width: 12rem;
@@ -73,6 +75,8 @@ section .home .container a {
     color: white;
     border: 2px solid;
     transition: all ease .2s;
+    font-weight: 600;
+    opacity: .8;
     
 }
 section .home .container a:hover{
